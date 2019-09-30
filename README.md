@@ -5,7 +5,7 @@ Doplňkovou funkcí portálu je i zpřístupnění klientských reportů. Typ re
 
 pmAPI zpřístupňuje tyto klíčové funkce klientům prostřednictvím rest služeb. Komunikace mezi informačním systémem klienta a portálem ČSOB probíhá přes šifrovaný protokol HTTPS a dále je zabezpečena pomocí elektronických podpisů všech požadavků a odpovědí. Elektronickými podpisy je navíc zaručena konzistence dat a nemožnost jejich změny třetí osobou (man-in-the-middle attack).
 
-Tento dokument obsahuje popis služeb pmAPI a způsob jeho integrace na straně klienta. Součástí integrace je i zprovoznění zabezpečené komunikace, tedy vygenerování certifikátů a jejich výměna s bankou.
+Tato dokumentace obsahuje popis služeb pmAPI a způsob jeho integrace na straně klienta. Součástí integrace je i zprovoznění zabezpečené komunikace, tedy vygenerování certifikátů a jejich výměna s bankou.
 ## 1. Slovníček nejdůležitějších pojmů
 **Account Transport** - zúčtovací modul pro odbavení karet ve veřejné dopravě
 
