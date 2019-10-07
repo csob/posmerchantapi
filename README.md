@@ -64,7 +64,7 @@ Transakce může nabývat stavů:
 
 **Stavy transakce**
 
-![Stavy transakce](https://github.com/gbily/Test/blob/e8ab669caa1d226879c1924e5ec995ef9d9515a0/Stavy%20transakce.png "Stavy transakce")
+![Stavy transakce](https://github.com/csob/posmerchantapi/blob/img/Stavy%20transakce.png "Stavy transakce")
 
 #####           2.1.1.1. Zjištění stavu transakce payment/state
 Metoda sloužící ke zjištění aktuálního stavu transakce. Obchodník si její pomocí může ověřit existenci konkrétní transakce, popřípadě zkontrolovat provedení změny stavu, zaúčtování.
@@ -87,13 +87,13 @@ Doba vyřízení žádosti závisí na rychlosti vyřízení žádosti v bance. 
 
 **Stavy požadavku na změnu stavu transakce**
 
-![Stavy požadavku na změnu stavu transakce](https://github.com/gbily/Test/blob/e8ab669caa1d226879c1924e5ec995ef9d9515a0/Stavy%20po%C5%BEadavku%20na%20zm%C4%9Bnu%20stavu%20transakce.png "Stavy požadavku na změnu stavu transakce")
+![Stavy požadavku na změnu stavu transakce](https://github.com/csob/posmerchantapi/blob/img/Stavy%20po%C5%BEadavku%20na%20zm%C4%9Bnu%20stavu%20transakce.png "Stavy požadavku na změnu stavu transakce")
 
 U transakcí ve stavu autorizováno/zaúčtováno je možné zadat částku reverzalu/znovuproplacení. Takzvaný částečný reverzal/částečné znovuproplacení. Částka musí být větší než nula a menší nebo rovna částce transakce.
 
 **Životní cyklus transakce**
 
-![Životní cyklus transakce](https://github.com/gbily/Test/blob/e8ab669caa1d226879c1924e5ec995ef9d9515a0/%C5%BDivotn%C3%AD%20cyklus%20transakce.png "Životní cyklus transakce")
+![Životní cyklus transakce](https://github.com/csob/posmerchantapi/blob/img/%C5%BDivotn%C3%AD%20cyklus%20transakce.png "Životní cyklus transakce")
 
 #####           2.1.1.3.	Reverzování transakce payment/reverse
 Metoda požádá o odvolání úspěšně autorizované nebo zaúčtované transakce.
@@ -170,23 +170,23 @@ Integrace pmAPI začíná po sjednání poskytování těchto služeb v bance. O
 
 **Postup integrace a spuštění ostrého provozu**
 
-![Postup integrace a spuštění ostrého provozu](https://github.com/gbily/Test/blob/e8ab669caa1d226879c1924e5ec995ef9d9515a0/Postup%20integrace%20a%20spu%C5%A1t%C4%9Bn%C3%AD%20ostr%C3%A9ho%20provozu.png "Postup integrace a spuštění ostrého provozu")
+![Postup integrace a spuštění ostrého provozu](https://github.com/csob/posmerchantapi/blob/img/Postup%20integrace%20a%20spu%C5%A1t%C4%9Bn%C3%AD%20ostr%C3%A9ho%20provozu.png "Postup integrace a spuštění ostrého provozu")
 ###     3.2. Generování testovacích klíčů
 Prostředky pro generování testovacích klíčů jsou dostupné na stránkách POSmerchant v integračním prostředí. Klíče se generují pomocí technologie JavaScript přímo na počítači obchodníka. Privátní část klíče se nepřenáší přes internet, banka k němu nemá přístup. Počítač by měl být bezpečný - nainstalována aktuální verze antivirového programu, dodržování pravidel bezpečného používání.
 
 Generování a registrace testovacího klíče probíhá v POSMerchantu v integračním prostředí (https://iposman.iplatebnibrana.csob.cz/posmerchant) na záložce Obchodníci, po kliknutí na ikonu klíče. Tato funkce je dostupná až po sjednání a povolení funkce pmAPI.
 
-![Generování klíčů](https://github.com/gbily/Test/blob/img/Generování%20klíčů.png "Generování klíčů")
+![Generování klíčů](https://github.com/csob/posmerchantapi/blob/img/Generov%C3%A1n%C3%AD%20kl%C3%AD%C4%8D%C5%AF.png "Generování klíčů")
 
 Nabídne se možnost vygenerování testovacího klíče, případně vložení vlastního veřejného klíče.
 
-![Generování klíčů obchodníka](https://github.com/gbily/Test/blob/img/Generov%C3%A1n%C3%AD%20kl%C3%AD%C4%8D%C5%AF%20obchodn%C3%ADka.png "Generování klíčů obchodníka")
+![Generování klíčů obchodníka](https://github.com/csob/posmerchantapi/blob/img/Generov%C3%A1n%C3%AD%20kl%C3%AD%C4%8D%C5%AF%20obchodn%C3%ADka.png "Generování klíčů obchodníka")
 
 Při zvolení možnosti vložit vlastní klíč, vloží obchodník veřejnou část svého RSA klíče (public key).
 
 Při zvolení možnosti vygenerování testovacího klíče proběhne generování pomocí technologie JavaScript přímo na počítači obchodníka. Soukromý klíč neopustí počítač.
 
-![Vygenerované klíče](https://github.com/gbily/Test/blob/img/Vygenerovan%C3%A9%20kl%C3%AD%C4%8De.png "Vygenerované klíče")
+![Vygenerované klíče](https://github.com/csob/posmerchantapi/blob/img/Vygenerovan%C3%A9%20kl%C3%AD%C4%8De.png "Vygenerované klíče")
 
 Veřejný klíč (public key) slouží k ověření podpisu zprávy od obchodníka na straně pmAPI. Tento klíč je vhodné stáhnout a zazálohovat pro případ jeho obnovy/opětovného zavedení na POSMerchant při problémech. Je nutné jej odeslat na server pomocí tlačítka POTVRDIT KLÍČE. Obchodník s tímto klíčem nepracuje. 
 
@@ -194,9 +194,9 @@ Soukromý klíč (private key) slouží k podpisu zprávy zaslané obchodníkem 
 
 Po POTVRZENÍ KLÍČE je na registrovanou emailovou adresu distribuován aktivační kód pro potvrzení a aktivaci klíče.
 
-![Aktivace obchodníka](https://github.com/gbily/Test/blob/img/Aktivace%20obchodn%C3%ADka.png "Aktivace obchodníka")
+![Aktivace obchodníka](https://github.com/csob/posmerchantapi/blob/img/Aktivace%20obchodn%C3%ADka.png "Aktivace obchodníka")
 
-![Stáhnutí veřejného klíče](https://github.com/gbily/Test/blob/img/St%C3%A1hnut%C3%AD%20ve%C5%99ejn%C3%A9ho%20kl%C3%AD%C4%8De.png "Stáhnutí veřejného klíče")
+![Stáhnutí veřejného klíče](https://github.com/csob/posmerchantapi/blob/img/St%C3%A1hnut%C3%AD%20ve%C5%99ejn%C3%A9ho%20kl%C3%AD%C4%8De.png "Stáhnutí veřejného klíče")
 ###     3.3. Integrace
 V tomto okamžiku může obchodník spustit integraci svého řešení (informačního systému) s pmAPI. Privátní klíč obchodníka společně s veřejným klíčem banky předá vývoji, který může vyvíjet a testovat proti veřejnému testovacímu prostředí pmAPI. 
 ####           3.3.1.	Integrační prostředí pmAPI
@@ -208,27 +208,27 @@ Jakmile je obchodník spokojen s výsledky integračních testů napojení svéh
 
 Ověření splnění všech integračních testů je dostupné v POSMerchantu v integračním prostředí (https://iposman.iplatebnibrana.csob.cz/posmerchant) na záložce Obchodníci, po kliknutí na ikonu fajfky. Tato funkce je dostupná až po sjednání a povolení funkce pmAPI.
 
-![Schválení](https://github.com/gbily/Test/blob/img/Schv%C3%A1len%C3%AD.png "Schválení")
+![Schválení](https://github.com/csob/posmerchantapi/blob/img/Schv%C3%A1len%C3%AD.png "Schválení")
 
 Zde je zobrazen seznam požadovaných volání pmAPI, které je doporučeno provést pro splnění integračních testů.
 
-![Volání pmAPI](https://github.com/gbily/Test/blob/img/Vol%C3%A1n%C3%AD%20pmAPI.png "Volání pmAPI")
+![Volání pmAPI](https://github.com/csob/posmerchantapi/blob/img/Vol%C3%A1n%C3%AD%20pmAPI.png "Volání pmAPI")
 ###     3.5. Generování ostrých klíčů
 Po schválení přechodu do ostrého provozu je obchodníkovi umožněno vygenerovat nové, ostré klíče, které budou použity pro provoz v produkčním prostředí. Generátor ostrých klíčů je dostupný na stránkách POSmerchant. Generátor ostrých klíčů pracuje shodným způsobem, jako generátor testovacích klíčů, tedy lokálně na počítači obchodníka. 
 
 Generování a registrace ostrého klíče probíhá v POSMerchantu (https://posman.csob.cz/posmerchant) na záložce Obchodníci, po kliknutí na ikonu klíče. Tato funkce je dostupná až po sjednání a povolení funkce pmAPI.
 
-![Vygenerované ostré klíče](https://github.com/gbily/Test/blob/img/Vygenerovan%C3%A9%20ostr%C3%A9%20kl%C3%AD%C4%8De.png "Vygenerované ostré klíče")
+![Vygenerované ostré klíče](https://github.com/csob/posmerchantapi/blob/img/Vygenerovan%C3%A9%20ostr%C3%A9%20kl%C3%AD%C4%8De.png "Vygenerované ostré klíče")
 
 Nabídne se možnost vygenerování klíče, případně vložení vlastního veřejného klíče.
 
-![Generování klíčů ostrých klíčů obchodníka](https://github.com/gbily/Test/blob/img/Generov%C3%A1n%C3%AD%20kl%C3%AD%C4%8D%C5%AF%20ostr%C3%BDch%20kl%C3%AD%C4%8D%C5%AF%20obchodn%C3%ADka.png "Generování klíčů ostrých klíčů obchodníka")
+![Generování klíčů ostrých klíčů obchodníka](https://github.com/csob/posmerchantapi/blob/img/Generov%C3%A1n%C3%AD%20kl%C3%AD%C4%8D%C5%AF%20ostr%C3%BDch%20kl%C3%AD%C4%8D%C5%AF%20obchodn%C3%ADka.png "Generování klíčů ostrých klíčů obchodníka")
 
 Při zvolení možnosti vložit vlastní klíč, vloží obchodník veřejnou část svého RSA klíče (public key).
 
 Při zvolení možnosti vygenerování klíče proběhne generování pomocí technologie JavaScript přímo na počítači obchodníka. Soukromý klíč neopustí počítač.
 
-![Vygenerované ostré klíče](https://github.com/gbily/Test/blob/img/Vygenerovan%C3%A9%20ostr%C3%A9%20kl%C3%AD%C4%8De.png "Vygenerované ostré klíče")
+![Vygenerované ostré klíče](https://github.com/csob/posmerchantapi/blob/img/Vygenerovan%C3%A9%20ostr%C3%A9%20kl%C3%AD%C4%8De.png "Vygenerované ostré klíče")
 
 Veřejný klíč (public key) slouží k ověření podpisu zprávy od obchodníka na strane pmAPI. Tento klíč je vhodné stáhnout a zazálohovat pro případ jeho obnovy/opětovného zavedení na POSMerchant při problémech. Je nutné jej odeslat na server pomocí tlačítka POTVRDIT KLÍČE. Obchodník s tímto klíčem nepracuje.
 
@@ -240,9 +240,9 @@ Pro vyšší bezpečnost, ale také pro případ, kdy za běhu systému potřebu
 
 Obchodník má přístup do systému POSMerchant ČSOB, kde se jeho nově vygenerovaný klíč zobrazí v částí Platební terminály. Zde jej potvrdí a zaktivuje. K této operaci je třeba jednorázový aktivační kód, který obchodník obdržel na email při jeho generování, a který byl společně s veřejnou částí klíče odeslán na pmAPI. Okamžikem této aktivace se klíč aktivuje a pmAPI jej ihned začne používat. Tímto krokem je jednak dvojitě zabezpečeno předání klíče a současně obchodník sám určuje okamžik jeho zavedení.
 
-![Aktivace obchodníka PP](https://github.com/gbily/Test/blob/img/Aktivace%20obchodn%C3%ADka%20PP.png "Aktivace obchodníka PP")
+![Aktivace obchodníka PP](https://github.com/csob/posmerchantapi/blob/img/Aktivace%20obchodn%C3%ADka%20PP.png "Aktivace obchodníka PP")
 
-![Stáhnutí veřejného klíče PP](https://github.com/gbily/Test/blob/img/St%C3%A1hnut%C3%AD%20ve%C5%99ejn%C3%A9ho%20kl%C3%AD%C4%8De%20PP.png "Stáhnutí veřejného klíče PP")
+![Stáhnutí veřejného klíče PP](https://github.com/csob/posmerchantapi/blob/img/St%C3%A1hnut%C3%AD%20ve%C5%99ejn%C3%A9ho%20kl%C3%AD%C4%8De%20PP.png "Stáhnutí veřejného klíče PP")
 ###     3.7. Ostrý provoz
 V tuto chvíli je již možné využívat veškeré funkce pmAPI.
 ## 4. Rozhraní pmAPI
@@ -606,9 +606,9 @@ Podpis odpovědi je shodný s operací payment/reverse.
 ####           4.3.2.	Výpisy
 Pro přístup ke konkrétnímu výpisu je nutné zadat jeho unikátní ReportId. Tento identifikátor je uveden v POSMerchantu (https://posman.csob.cz/posmerchant), na záložce Obchodníci – Výpisy.
 
-![Výpisy](https://github.com/gbily/Test/blob/img/V%C3%BDpisy.png "Výpisy")
+![Výpisy](https://github.com/csob/posmerchantapi/blob/img/V%C3%BDpisy.png "Výpisy")
 
-![Detail výpisů](https://github.com/gbily/Test/blob/img/Detail%20v%C3%BDpis%C5%AF.png "Detail výpisů")
+![Detail výpisů](https://github.com/csob/posmerchantapi/blob/img/Detail%20v%C3%BDpis%C5%AF.png "Detail výpisů")
 #####           4.3.2.1.	Seznam vygenerovaných výpisů report/list
 HTTP metoda: **POST**
 
