@@ -11,4 +11,4 @@ Komunikační kanál je zabezpečen protokolem SSL (HTTPS), pro ověření ident
 
 Jednotlivé fáze a postup je dále rozepsán v této kapitole.
 ## 4. Rozhraní pmAPI
-Popisuje **volání rozhraní pmAPI**, které vychází z principů REST API, je dostupné přes HTTPS protokol a data jsou posílaná v JSON formátu. Dále **podepisování**, tj., že každý požadavek i odpověď musí být podepsány soukromým klíčem obchodníka/banky a měly by být při přijetí obchodníkem ověřeny veřejným klíčem obchodníka/banky. Jsou zde také uvedeny příklady volání jednotlivých metod a jejich návratové hodnoty.
+Popisuje **volání rozhraní pmAPI**, které vychází z principů REST API, je dostupné přes HTTPS protokol a data jsou posílaná v JSON formátu. Dále **podepisování**, tj., že každý požadavek i odpověď musí být podepsán soukromým klíčem obchodníka/banky a měly by být při přijetí obchodníkem ověřeny veřejným klíčem obchodníka/banky. Jsou uvedeny také příklady volání jednotlivých metod a jejich návratové hodnoty.
