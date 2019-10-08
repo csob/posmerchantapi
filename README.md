@@ -1,5 +1,5 @@
 # POSMerchant API
-Je **rozhraní mezi Internetovým portálem ČSOB POSMerchant a informačním systémem klienta ČSOB** (dále jen pmAPI). Internetový portál ČSOB POSMerchant je určen pro klienty ČSOB, kteří využívají její služby zejména v oblasti platebních terminálů a platební brány. Portál má dvě základní funkce - poskytnout klientovi **náhled na transakce** a umožnit **změnu jejich stavu**.
+Je **rozhraní mezi Internetovým portálem ČSOB POSMerchant a informačním systémem obchodníka** (dále jen pmAPI). Internetový portál ČSOB POSMerchant je určen pro klienty ČSOB, kteří využívají její služby zejména v oblasti platebních terminálů a platební brány. Portál má dvě základní funkce - poskytnout klientovi **náhled na transakce** a umožnit **změnu jejich stavu**.
 
 **pmAPI** zpřístupňuje tyto klíčové funkce klientům prostřednictvím **rest služeb**. Komunikace mezi informačním systémem klienta a portálem ČSOB probíhá přes šifrovaný protokol HTTPS a dále je zabezpečena pomocí elektronických podpisů všech požadavků a odpovědí.
 ## 1. Slovníček nejdůležitějších pojmů
