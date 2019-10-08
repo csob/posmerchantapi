@@ -3,7 +3,7 @@ Je **rozhraní mezi Internetovým portálem ČSOB POSMerchant a informačním sy
 
 **pmAPI** zpřístupňuje tyto klíčové funkce klientům prostřednictvím **rest služeb**. Komunikace mezi informačním systémem klienta a portálem ČSOB probíhá přes šifrovaný protokol HTTPS a dále je zabezpečena pomocí elektronických podpisů všech požadavků a odpovědí.
 ## 1. Slovníček nejdůležitějších pojmů
-V kapitole jsou vysvětleny nejčastěji používáné zkratky a pojmy dále v dokumentaci.
+V této části jsou vysvětleny nejčastěji používáné zkratky a pojmy uvedeny dále v dokumentaci.
 ## 2. Funkce pmAPI
 Zde jsou popsány jednotlivé funkce pmAPI, které se týkají **transakcí** (např. změna jejich stavu), **výpisů** (stažení, seznam), **zúčtovacího modulu** (Account Transport - pro odbavení bank. karet ve veřejné dopravě), **DCC** (kurzovní lístek) a další **pomocné funkce** (echo).
 ## 3. Postup integrace, klíče a kde je vzít
