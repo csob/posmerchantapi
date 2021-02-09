@@ -5,7 +5,7 @@ Je **rozhraní mezi Internetovým portálem ČSOB POSMerchant a informačním sy
 ## 1. Slovníček nejdůležitějších pojmů
 V této části jsou vysvětleny nejčastěji používáné zkratky a pojmy uvedeny dále v dokumentaci.
 ## 2. Funkce pmAPI
-Zde jsou popsány jednotlivé funkce pmAPI, které se týkají **transakcí** (např. změna jejich stavu), **výpisů** (stažení, seznam), **zúčtovacího modulu** (Account Transport - pro odbavení bank. karet ve veřejné dopravě), **DCC** (kurzovní lístek) a další **pomocné funkce** (echo).
+Zde jsou popsány jednotlivé funkce pmAPI, které se týkají **transakcí** (např. změna jejich stavu), **výpisů** (stažení, seznam), **uživatelských reportů** (stažení, seznam), **zúčtovacího modulu** (Account Transport - pro odbavení bank. karet ve veřejné dopravě), **DCC** (kurzovní lístek) a další **pomocné funkce** (echo).
 ## 3. Postup integrace, klíče a kde je vzít
 Komunikační kanál je zabezpečen protokolem SSL (HTTPS), pro ověření identity obchodníka jsou však navíc všechny požadavky odesílané na pmAPI podepsané jeho privátním klíčem a všechny odpovědi podepsané privátním klíčem banky.
 
